@@ -4,7 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <title>Currency Exchanger</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Currency Exchanger</h1>
+    <form id="currencyForm">
+      <label for="amount">Amount (USD💵): </label>
+      <input type="number" id="amount" required step="0.01" />
+      <label for="currency">Target Currency:</label>
+      <select id="currency" required>
+        <option value="KRW">South Korean Won🇰🇷</option>
+        <option value="GBP">British Pound🇬🇧</option>
+        <option value="AUD">Australian Dollar🇦🇺</option>
+        <option value="CAD">Canadian Dollar🇨🇦</option>
+        <option value="EUR">Euro🇪🇺</option>
+        <option value="JPY">Japanese Yen🇯🇵</option></select
+      ><br />
+      <input type="submit" value="convert" />
+    </form>
+    <div id="result"></div>
+  </body>
 </html>
